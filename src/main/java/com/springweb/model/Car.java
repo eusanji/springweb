@@ -32,7 +32,7 @@ public class Car {
     
     @Override
     public String toString() {
-        return "Car[carId=" + carId +", manufacturer='" + manufacturer + '\'' + ", model=" + model + ']';
+        return "Car[carId=" + this.carId +", manufacturer='" + this.manufacturer + '\'' + ", model=" + this.model + ']';
     }
 
 }
