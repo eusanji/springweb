@@ -4,7 +4,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<title>Add new car</title>
 <head><h2> Add new car</h2>
 <link type="text/css"
 href="css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
@@ -15,7 +14,7 @@ href="css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 <form method= "POST" action="CarController" name="frmAddCar">
     Car Id: <input type="text" readonly="readonly" name="carId" value="<c:out value="${car.manufacturer}"/>"></input>
     <br>
-    Manyfacturer:<input type="text" readonly="readonly" name="manufacturer" value="<c:out value="${car.manufacturer}"/>"></input>
+    Manufacturer:<input type="text" readonly="readonly" name="manufacturer" value="<c:out value="${car.manufacturer}"/>"></input>
     <br>
     Model:<input type="text" readonly="readonly" name="model" value="<c:out value="${car.model}"/>"></input>
     <br>
