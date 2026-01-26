@@ -14,7 +14,7 @@ id="WebApp_ID" version="2.5"
         <description></description>
         <display-name>CarController</display-name>
         <servlet-name>CarController</servlet-name>
-        <servlet-class>alison.controller.CarController</servlet-class>
+        <servlet-class>com.springweb.controller.CarController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CarController</servlet-name>
