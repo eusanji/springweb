@@ -12,13 +12,13 @@ href="css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 </head>
 <body>
 <form method= "POST" action="CarController" name="frmAddCar">
-    Car Id: <input type="text" readonly="readonly" name="carId" value="<c:out value="${car.manufacturer}"/>"></input>
+    Car Id: <input type="text" readonly="readonly" name="carId" value="<c:out value="${car.carId}"/>"></input>
     <br>
-    Manufacturer:<input type="text" readonly="readonly" name="manufacturer" value="<c:out value="${car.manufacturer}"/>"></input>
+    Manufacturer:<input type="text" name="manufacturer" value="<c:out value="${car.manufacturer}"/>"></input>
     <br>
-    Model:<input type="text" readonly="readonly" name="model" value="<c:out value="${car.model}"/>"></input>
+    Model:<input type="text" name="model" value="<c:out value="${car.model}"/>"></input>
     <br>
-    <input type="submit" value="submit"/>
+    <input type="submit" value="Add"/>
 </form>
 </body>
 </html>
