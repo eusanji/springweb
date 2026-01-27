@@ -59,8 +59,8 @@ public class CarController extends HttpServlet {
 	    
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 	    	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-	    	Car car = (Car) context.getBean("car");
-	    	car.setManufacturer(request.getParameter("Manufacturer"));
+	    	Car car = (Car) context.getBean("Car");
+	    	car.setManufacturer(request.getParameter("manufacturer"));
 	    	car.setModel(Integer.parseInt(request.getParameter("model")));
 	    	String carId = request.getParameter("carId");
 	    	try {
