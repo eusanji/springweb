@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Car Example</title>
+<title>Show all Cars</title>
 </head>
 <body>
-<jsp:forward page="/CarController?action=ListUser"></jsp:forward>
+<jsp:forward page="/CarController?action=listCar"></jsp:forward>
 </body>
 </html>
