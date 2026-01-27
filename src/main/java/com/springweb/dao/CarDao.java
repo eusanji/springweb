@@ -20,9 +20,10 @@ public class CarDao {
     }
 
     public void insertCar(Car car) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("insert into cars(manufacturer,model) values (?,?)");
+        PreparedStatement preparedStatement = connection.prepareStatement("insert into Cars(manufacturer,model) values (?,?)");
         preparedStatement.setString(1, car.getManufacturer());
         preparedStatement.setInt(2, car.getModel());
+        preparedStatement.execute();
     }
 
     public void deleteCar(int carId) throws SQLException {
