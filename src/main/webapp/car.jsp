@@ -18,7 +18,7 @@ href="css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
     <br>
     Model:<input type="text" name="model" value="<c:out value="${car.model}"/>"></input>
     <br>
-    <input type="submit" value="Add"/>
+    <input type="submit" value="Add/Edit"/>
 </form>
 </body>
 </html>
