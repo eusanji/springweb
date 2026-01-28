@@ -33,10 +33,10 @@ public class CarDao {
     }
 
     public void updateCar(Car car) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("update cars set manufacturer=?, model=?" +
-                "where carId=?");
+        PreparedStatement preparedStatement = connection.prepareStatement("update cars set manufacturer=?, model=? where carId=?");
         preparedStatement.setString(1, car.getManufacturer());
         preparedStatement.setInt(2, car.getModel());
+        preparedStatement.setInt(3, car.getCarId());
         preparedStatement.executeUpdate();
     }
 
@@ -60,7 +60,7 @@ public class CarDao {
         preparedStatement.setInt(1, carId);
         ResultSet rs = preparedStatement.executeQuery();
         if (rs.next()){
-            car.setCarId(rs.getInt("cardId"));
+            car.setCarId(rs.getInt("carId"));
             car.setManufacturer(rs.getString("manufacturer"));
             car.setModel(rs.getInt("model"));
         }
