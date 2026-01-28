@@ -34,14 +34,14 @@ public class CarController extends HttpServlet {
 	        String action = request.getParameter("action");
 	        try {
 	            if(action.equalsIgnoreCase("delete")){
-	                int CardId = Integer.parseInt(request.getParameter("cardId"));
+	                int CardId = Integer.parseInt(request.getParameter("carId"));
 	                dao.deleteCar(CardId);
 	                forward = LIST_USER;
 	                request.setAttribute("cars", dao.getAllCars());
 	            } else if (action.equalsIgnoreCase("edit")) {
 	                forward = INSERT_OR_EDIT;
-	                int CardId = Integer.parseInt(request.getParameter("cardId"));
-	                Car car = dao.getCarById(CardId);
+	                int CarId = Integer.parseInt(request.getParameter("carId"));
+	                Car car = dao.getCarById(CarId);
 	                request.setAttribute("car", car);
 	            } else if (action.equalsIgnoreCase("listCar")){
 	                forward = LIST_USER;
